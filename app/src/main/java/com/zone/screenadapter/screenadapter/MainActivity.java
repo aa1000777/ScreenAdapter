@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         DisplayMetrics dm = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(dm);//display = getWindowManager().getDefaultDisplay();display.getMetrics(dm)（把屏幕尺寸信息赋值给DisplayMetrics dm）;
         System.out.println("width:"+dm.widthPixels+"\t height:"+dm.heightPixels+"\t dpi:"+dm.densityDpi);
-        System.out.println("Xd:"+getResources().getDimension(R.dimen.xD));
+        System.out.println("Xd:"+getResources().getDimension(R.dimen.xD));//Xd 代表 系统是从哪个文件夹取的值
 
         float fontPx = getResources().getDimension(R.dimen.font20px);
         System.out.println("font20---->"+fontPx+"px");
